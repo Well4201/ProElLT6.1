@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Mountain – Nietzsche SVG Text Art</title>
+<style>
+  html, body { margin: 0; background: #0d1018; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  svg { width: 900px; max-width: 100%; height: auto; display: block; }
+  text { font-family: Georgia, "Times New Roman", serif; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 900 780" width="900" height="780" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="A mountain made of text. The climbing slope reads suffering, the descending slope reads survive, and the summit glows with meaning.">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd978" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffd978" stop-opacity="0"/>
+    </radialGradient>
+
+    <path id="l1" d="M 100 600 L 450 200"/>
+    <path id="l2" d="M 200 600 L 450 330"/>
+    <path id="l3" d="M 290 600 L 450 420"/>
+
+    <path id="r1" d="M 450 200 L 800 600"/>
+    <path id="r2" d="M 450 330 L 700 600"/>
+    <path id="r3" d="M 450 420 L 610 600"/>
+
+    <path id="halo" d="M 450 85 a 45 45 0 1 1 -0.01 0"/>
+    <path id="base" d="M 100 635 L 800 635"/>
+  </defs>
+
+  <rect width="900" height="780" fill="#0d1018"/>
+  <circle cx="450" cy="130" r="140" fill="url(#glow)"/>
+
+  <g fill="#b5504a" font-size="14" letter-spacing="1">
+    <text><textPath href="#l1" textLength="500" lengthAdjust="spacing">TO LIVE IS TO SUFFER · TO LIVE IS TO SUFFER</textPath></text>
+    <text fill="#8f3f3b"><textPath href="#l2" textLength="250" lengthAdjust="spacing">TO LIVE IS TO SUFFER</textPath></text>
+    <text fill="#6e302d"><textPath href="#l3" textLength="110" lengthAdjust="spacing">TO SUFFER</textPath></text>
+  </g>
+
+  <g fill="#d3b36d" font-size="14" letter-spacing="1">
+    <text><textPath href="#r1" startOffset="31.5" textLength="500" lengthAdjust="spacing">TO SURVIVE · TO SURVIVE · TO SURVIVE · TO SURVIVE</textPath></text>
+    <text fill="#a98f54"><textPath href="#r2" startOffset="118" textLength="250" lengthAdjust="spacing">TO SURVIVE · TO SURVIVE</textPath></text>
+    <text fill="#826e41"><textPath href="#r3" startOffset="131" textLength="110" lengthAdjust="spacing">TO SURVIVE</textPath></text>
+  </g>
+
+  <text font-size="13" letter-spacing="2.5" fill="#ffe9a8">
+    <textPath href="#halo">FIND MEANING · FIND MEANING · </textPath>
+  </text>
+
+  <text font-size="13" letter-spacing="1.5" fill="#8c8478">
+    <textPath href="#base">TO LIVE IS TO SUFFER, TO SURVIVE IS TO FIND MEANING IN THE SUFFERING</textPath>
+  </text>
+
+  <text x="450" y="730" font-size="13" fill="#8c8478" text-anchor="middle" font-style="italic">Friedrich Nietzsche</text>
+</svg>
+</body>
+</html>
